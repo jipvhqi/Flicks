@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivMovieBackdrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/ivPlayIconOverlay"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="4dp"
+        app:layout_constraintLeft_toLeftOf="@id/ivMovieBackdrop"
+        app:layout_constraintRight_toRightOf="@id/ivMovieBackdrop"
+        app:layout_constraintTop_toTopOf="@id/ivMovieBackdrop"
+        app:layout_constraintBottom_toBottomOf="@id/ivMovieBackdrop" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ivMovieBackdrop"
+        tools:text="Aquaman" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textColor="@color/colorGray"
+        android:lines="4"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintLeft_toRightOf="@id/ivMovieBackdrop"
+        tools:text="Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and be a hero to the world." />
+</android.support.constraint.ConstraintLayout>
